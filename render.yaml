@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-uploader
+    env: python
+    buildCommand: ""
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8116025615:AAEPcG6umuXxmYzLKjlq5u3VMeILE1PksZw
+      - key: CHANNEL_ID
+        value: @cinema_zone_channel
